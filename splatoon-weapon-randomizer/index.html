@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splatoon Random Weapon</title>
+    <style>
+        body{
+            background: #000000 url(fundo.png);
+            font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+            color: white;
+        }
+
+        div{
+            text-align: center;
+        }
+
+        .bloco{
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .titulo,.num{
+            text-align: center;
+            padding: 10px;
+        }
+
+        .titulo{
+            background-color: rgb(25, 25, 25);
+            line-height: 50px;
+            font-size: 2.5em;
+            border-radius: 10px 10px 0 0;
+            font-weight: bold;
+        }
+
+        .num{
+            line-height: 200px;
+            font-size: 2em;
+            border-radius: 0 0 10px 10px;
+        }
+        
+        #arma{
+            background: rgb(16, 195, 17);
+        }
+        #coluna{
+            background: rgb(239, 45, 124);
+        }
+
+        #btn{
+            background-color: rgb(25, 25, 25);
+            border: none;
+            color: white;
+            font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 2em;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        footer{
+            background: rgb(25, 25, 25);
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+
+
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco">
+        <div class="titulo">Arma</div>
+        <div class="num" id="arma">?</div>
+    </div>
+
+    <div class="bloco">
+        <div class="titulo">Bloco</div>
+        <div class="num" id="coluna">?</div>
+    </div>
+
+    <footer>&copy; phStefen</footer>
+
+    <div class="btn"><input type="button" value="Sortear" id="btn" onclick="sortear()"></div>
+
+    <script>
+        var b1 = document.getElementById('arma')
+        var b2 = document.getElementById('coluna')
+
+        function sortear(){
+            b1.innerText = Math.floor(Math.random() * (10)) + 2;
+            b2.innerText = Math.floor(Math.random() * (11)) + 1;
+        }
+    </script>
+</body>
+</html>
