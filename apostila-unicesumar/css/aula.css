@@ -1,0 +1,119 @@
+header{
+    text-align-last: justify;
+    background-color: #070709;
+}
+
+h2.inicio{
+    margin-top: 50px;
+}
+
+mark{
+    color: #070709;
+}
+
+nav{
+    background-color: #070709;
+    display: inline-flex;
+}
+
+header h1{
+    display: inline-flex;
+    font-size: 50px;
+}
+
+p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+footer{
+    background-image: url('../img/aulas.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 35px;
+}
+
+.sum{
+    text-align: center;
+}
+
+.topo-sumario h1{
+    padding: 3px;
+    text-align: center;
+    color: #25292E;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 0 0;
+}
+
+.corpo-sumario{
+    padding: 0 50px;
+    margin: 0 20px;
+    margin-top: 5px;
+}
+
+.corpo-sumario li{
+    text-align: justify;
+}
+
+.sumario{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    border-left: 5px solid #0F0F15;
+    border-right: 5px solid #0F0F15;
+}
+
+.sumario a{
+    text-decoration: none ;
+}
+
+.sumario li:hover{
+    text-decoration: underline overline;
+}
+
+.codigo{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: #25292E;
+    border-left: 15px solid #A6FA62;
+}
+
+.inicio{
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    color: #25292E;
+    border-left: 15px solid #2B6566;
+}
+
+.fim-div{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fim-div .inicio{
+    width: 70%;
+    margin-right: 10px;
+}
+
+.fim{
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    color: #25292E;
+    border-right: 15px solid #2B6566;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bolder;
+    width: 30%;
+}
+
+.fim:hover{
+    background-color: #25292E;
+    color: #2B6566;
+    border-right-color:  #f5f5f5;
+}

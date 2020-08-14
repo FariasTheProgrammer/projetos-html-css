@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> &lt;/Aphostila&gt;</title>
     <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        .topo-sumario h1 {
+            padding: 10px;
+            text-align: center;
+            color: whitesmoke;
+            background-color: #0F0F15;
+            border-radius: 10px 10px 0 0;
+            font-size: 5em;
+        }
+
+        .corpo-sumario li {
+            padding: 10px 0;
+            text-align: center;
+            font-size: 3em;
+            list-style-type: none;
+        }
+
+        .sumario {
+            margin: 10px;
+            margin-bottom: 60px;
+            text-align: center;
+            border-radius: 20px;
+            border-left: 10px solid #0F0F15;
+            border-right: 10px solid #0F0F15;
+        }
+
+        .sumario a {
+            text-decoration: none;
+        }
+
+        .sumario li:hover {
+            text-decoration: underline overline;
+            background-color: whitesmoke;
+            color: #0F0F15
+        }
+
+        .sumario .ultimo {
+            border-radius: 0 0 9px 9px;
+        }
+
+        article {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>
@@ -24,24 +71,41 @@
         <p>
             Estes são os conteúdos das Aulas aprendidos durante a matéria <em>Desenvolvimento de Aplicações</em>
         </p>
-        <p>
-            <ul>
-                <li><h2>Aula 01</h2></li>
-                <p><a href="aulas/aula-01.html" title="<p> <br> <h1>">Conteúdo: Tags Básicas...</a></p>
-
-                <li><h2>Aula 02</h2></li>
-                <p><a href="" title="<ul> <ol> <li>">Conteúdo: Tags de Listas...</a></p>
-
-                <li><h2>Aula 03</h2></li>
-                <p><a href="" title="<a> <img>">Conteúdo: Imagens & Links...</a></p>
-            </ul>
-        </p>
     </article>
+    <div class="sumario">
+        <div class="topo-sumario">
+            <h1>{Índice}</h1>
+        </div>
+        <div class="corpo-sumario">
+            <p>
+            <ul>
+                <a href="aulas/aula-01.html" title="<p> <br> <em> <strong> <b> <i> <em>...">
+                    <li>
+                        &lt;Aula 01&gt;
+                    </li>
+                </a>
+                <a href="aulas/aula-01.html" title="<ul> <ol> <li>">
+                    <li>
+                        &lt;Aula 02&gt;
+                    </li>
+                </a>
+                <a href="aulas/aula-01.html" title="<a> <img>">
+                    <li class="ultimo">
+                        &lt;Aula 03&gt;
+                    </li>
+                </a>
+            </ul>
+            </p>
+        </div>
+    </div>
     <footer class="aulas">
         &COPY; 2020 &lt;/A<span class="titulo">ph</span>ostila&gt;
         <div class="referencia">
-            Ícones feitos por <a href="https://www.flaticon.com/br/autores/good-ware" title="Good Ware" target="_blank">Good Ware</a> em <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank">www.flaticon.com</a>
+            Ícones feitos por <a href="https://www.flaticon.com/br/autores/good-ware" title="Good Ware"
+                target="_blank">Good Ware</a> em <a href="https://www.flaticon.com/br/" title="Flaticon"
+                target="_blank">www.flaticon.com</a>
         </div>
     </footer>
 </body>
+
 </html>

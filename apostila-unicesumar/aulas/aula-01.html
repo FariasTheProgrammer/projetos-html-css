@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&lt;/Aphostila&gt;</title>
-    <link rel="stylesheet" href="../css/aula-01.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/aula.css">
+    <style>
+        .v{
+            color: green;
+        }
+
+        .am{
+            color: yellow;
+        }
+
+        .az{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,17 +33,43 @@
                 <li><a href="https://www.unicesumar.edu.br/home/" target="_blank" title="Unicesumar">Unicesumar</a></li>
             </ul>
         </nav>
+        <div style="clear: both;"></div>
     </header>
-    <article>
-        <h1>Aula 01 - <em>Tags Básicas</em></h1>
+    <div class="sum">
+        <div class="sumario">
+            <div class="topo-sumario">
+                <h1>{Aula 01}</h1>
+            </div>
+            <div class="corpo-sumario">
+                <h3><em>Sumário</em></h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="#sec1">&lt;HTML in a Nutshell&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec2">&lt;Tags!&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec3">&lt;Mais Tags?!?&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#fim">&lt;/HTML in a Nutshell&gt;</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <article id="sec1">
+        <h1 class="inicio">&lt;HTML in a Nutshell&gt;</h1>
         <p>
-            Bem-vindo a 1º Aula de <em>HTML</em>. Ela é uma Linguagem de <strike>Programação</strike> <strong>MARCAÇÃO!</strong>. Isso mesmo, <strong>Marcação!</strong>
+            Bem-vindo a 1º Aula de <em>HTML</em>. Nela nós veremos um pouco sobre como montar uma página, seus componentes e derivados. 
         </p>
         <p>
-            Diferente do que muitas pessoas pensam, não se programa em HTML ou CSS, pois ela não irá realizar tarefas de <em>rachar a cuca</em>, ela irá defenir marcações para que o <em>navegador</em> entenda de uma maneira, assim, deixando um texto 
+            Você sabia que HTML é uma Linguagem de Programação? Se você sabia então tá errado! HTML é uma linguagem de <strong>MARCAÇÃO!</strong> Isso mesmo, <strong>Marcação!</strong>
+            Diferente do que muitas pensam, não se programa em HTML ou CSS, pois ela não irá realizar tarefas de <em>rachar a cuca</em>, mas sim defenir marcações para que o <em>navegador</em> entenda de uma maneira para por exemplo, deixar um texto 
             <strong><span class="v">b</span><span class="am">o</span><span class="az">n</span><span class="az">i</span><span class="am">t</span><span class="v">o</span></strong> e colorido.
-        </p>
-        <p>
             Vamos então começar: Como crio uma página em HTML? É simples, basta ter um editor de texo em sua máquina (<em>Bloco de Notas</em>) e digitar assim:
         </p>
         <div class="codigo">
@@ -49,10 +89,10 @@
             &lt;/html&gt;
         </div>
         <p>
-            Após digitar tudo isso, deve salvar o documento com a extenção '.html', para fazer isso, vá em 'Salvar Como', digite 'index.html' e pronto! Você tem sua primeira página de HTML funcional! Mas o que esse mundarel de palavras significam???
+            Após digitar tudo isso, deve salvar o documento com a extenção '.html', para fazer isso, vá em 'Salvar Como', digite 'index.html' e pronto! Você tem sua primeira página de HTML funcional! Basta abrir o arquivo com um navegador qualquer e você irá ver o <a href="aula-01-exemplo-01.html" target="_blank">RESULTADO</a>. Mas o que esse mundarel de palavras significam???
         </p>
 
-        <h2>Tags!</h2>
+        <h2 id="sec2" class="inicio">&lt;Tags!&gt;</h2>
         <p>
             Tags são as <em>marcações</em> no HTML para fazer ele funcionar, para exemplificar, vamos começar de cima pra baixo usando de exemplo o código acima:
             <ul>
@@ -63,11 +103,120 @@
                     &lt;html&gt;: Esta tag inicia e indica de fato que estamos escrevendo em HTML, tudo que vai dentro dele é HTML puro! Note que temos um <em>lang="pt-BR"</em>, isso é um <strong>ATRIBUTO</strong>, ele seria um "adjetivo", uma informação adicional sobre a tag; neste caso, estamos definindo que o nosso arquivo html está definida como Portugues Brasileiro.
                 </li>
                 <li>
-                    &lt;tag&gt;
+                    &lt;head&gt;: Literalmente seria a "Cabeça" do arquivo, nele é colocado tags de configurações, como o Título da Página ou o Set de Caracteres.
+                </li>
+                <li>
+                    &lt;meta&gt;: É uma tag de configuração, nela você pode definir o 'charset' (permite usar acentuação e símbolos nas páginas) e outras coisinhas. Não mexeremos muito nela.
+                </li>
+                <li>
+                    &lt;/head&gt;: Opa, essa daí já não falamos não? Então, na verdade, essa é uma tag que <em>fecha</em> a tag &lt;head&gt;, sempre que vemos esse '/' antes do nome da tag, é porque ela está sendo fechada. Portanto a maioria das vezes que criararmos uma tag ela terá uma tag de fechamento também.
+                </li>
+                <li>
+                    &lt;body&gt; Agora chegamos na parte interessante, aqui dentro vem todo o <em>corpo</em> da página, todas as tags que vamos aprender vão aparecer aqui dentro. Você está lendo isso em uma tag que está dentro do &lt;body&gt; por exemplo.
+                </li>
+                <li>
+                    &lt;p&gt;: Pra finalizar o exmplo acima, este é um exmplo de tag que usamos dentro do &lt;body&gt;. Ela é uma tag que indica o início de um parágrafo! Inclusive, este texto está dentro de uma tag &lt;p&gt;,
                 </li>
             </ul>
         </p>
+
+        <p>
+            Ufa, quanta coisa né? Pena que é só o começo e tem muita coisa ainda rs 🤡🤡🤡
+        </p>
+
+        <h2 id="sec3" class="inicio">&lt;Mais Tags?!?&gt;</h2>
+        <p>
+            Pra finalizar essa Aula, vamos aprender mais algumas tags básicas.
+            Dentro do &lt;p&gt; dentro de &lt;body&gt;, vamos colocar o seguinte texto: 'Olá Mundinho!' 'Olá Mundo!' 'Olá Mundão!', um em cada linha.
+        </p>
+        <div class="codigo">
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá Mundinho!<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá Mundo!<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá Mundão!<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+            &lt;/body&gt;
+        </div>
+        <p>
+            OSHE, <a href="aula-01-exemplo-02.html" target="_blank">ABRI</a> a página e tá tudo está na mesma linha, por que?????? <br>
+        </p>
+        <p>
+            Simples jovi, como dito antes, HTML é uma linguagem de marcação, portanto o texto que você digitar ficará "cru", quando você quiser uma quebra de linha, não basta apenas apertar 'enter' no teclado, você deve colocar uma, <em>tag</em> (quem diria)! Então, qual tag vamos usar? Pra quebrar a linha, vamos usar o &lt;br&gt; (br = break row):
+        </p>
+        <div class="codigo">
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá Mundinho! &lt;br&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá Mundo! &lt;br&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá Mundão! &lt;br&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+            &lt;/body&gt;
+        </div>
+        <p>
+            Aeee, agora sim ta <a href="aula-01-exemplo-03.html" target="_blank">FUNFANDO</a> top. Pra finalizar bem finalizado finalizadinho, vamos deixar cada "Mundx" com um destaque diferente:
+        </p>
+        <div class="codigo">
+            &lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá &lt;b&gt;Mundinho!&lt;/b&gt;&lt; br&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá &lt;i&gt;Mundo!&lt;i&gt; &lt;br&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá &lt;mark&gt;Mundão!&lt;/mark&gt; &lt;br&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+            &lt;/body&gt;
+        </div>
+        <p>
+            Opa, os textos <a href="aula-01-exemplo-04.html" target="_blank">FICARAM</a> em <strong>Negrito</strong>, <em>Itálico</em> e <mark>Marcado</mark>, do balaco baco né?
+        </p>
+        <p>
+            Vejamos uma listinha com tipos de estilos de texto:
+
+            <ul>
+                <li>
+                    &lt;b&gt;: <b>Negrito</b>
+                </li>
+                <li>
+                    &lt;strong&gt;: Marca o Texto como <strong>Importante</strong> e deixa em Negrito
+                </li>
+                <li>
+                    &lt;i&gt;: <i>Itálico</i>
+                </li>
+                <li>
+                    &lt;em&gt;: Marca o Texto com <em>Ênfase</em> e deixa em Itálico
+                </li>
+                <li>
+                    &lt;mark&gt;: Marca o Texto com um <mark>Marca Texto</mark> (ha)
+                </li>
+                <li>
+                    &lt;small&gt;: Deixa o Texto <small>Pitchuchuchuco</small>
+                </li>
+                <li>
+                    &lt;del&gt;: Marca o Texto como <del>Deletado</del> e deixa Taxado
+                </li>
+                <li>
+                    &lt;ins&gt;: Marca o Texto como <ins>Inseridos</ins> e deixa Sublinhado
+                </li>
+                <li>
+                    &lt;sub&gt;: Deixa o Texto Pequeno e <sub>Em baixo</sub>, usado na Matemática Log<sub>10</sub> = nunca entendi log
+                </li>
+                <li>
+                    &lt;sup&gt;: Deixa o Texto Pequeno e <sup>Em cima</sup>, usado na Matemática 2<sup>2</sup> = 4 (esse eu sei) 
+                </li>
+            </ul>
+        </p>
+        <p>
+            AAAAAAAAAAAAAAAAAAAAAAAAAAA
+        </p>
+        <p>
+            Agora sim acabamos a primeira aula de HTML da &lt;/Aphostila&gt;! Siga em diante para aprender mais coisas nas próximas aulas, te vejo lá!
+        </p>
+        
+        <div class="fim-div">
+            <h1 class="inicio" id="fim">&lt;/HTML in a Nutshell&gt;</h1>
+            <a class="fim" href="">Próxima Aula</a>
+        </div>
     </article>
+
     <footer class="aulas">
         &COPY; 2020 &lt;/A<span class="titulo">ph</span>ostila&gt;
         <div class="referencia">

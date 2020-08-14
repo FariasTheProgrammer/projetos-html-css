@@ -16,6 +16,7 @@ body{
 
 .pg{
     color: #A6FA62;
+    font-style: italic;
 }
 
 header h1{
@@ -45,13 +46,12 @@ nav ul a{
 
 nav ul li a:hover{
     color: #A6FA62;
-    font-style: italic;
 }
 
 article{
     text-align: justify;
     background-color: #0F0F15;
-    margin: 10px;
+    margin: 10px 10px 60px 10px;
     padding: 20px;
     border-radius: 10px;
 }
@@ -76,7 +76,6 @@ footer{
     bottom: 0;
     width: 100%;
     padding: 10px 0 10px 0;
-    border-radius:10px 0 0 0;
     background-color: #070709;
     text-align: center;
 }
