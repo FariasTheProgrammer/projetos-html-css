@@ -1,0 +1,57 @@
+body{
+}
+
+.sidebar{
+    height: 100%;
+}
+
+.perfil{
+    height: 50px;
+    border-radius: 360px;
+}
+
+.cursos{
+    background-color:  #30252E;
+}
+
+.noticias{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.icon-home{
+    background-image: url("/aep/img/home.svg");
+}
+.icon-home:hover,
+.icon-home:focus {
+    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+}
+
+.icon-message{
+    background-image: url("/aep/img/message.svg");
+}
+.icon-message:hover,
+.icon-message:focus {
+    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+}
+
+.icon-notification{
+    background-image: url("/aep/img/notification.svg");
+}
+.icon-notification:hover,
+.icon-notification:focus {
+    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+}
+
+.icon-page{
+    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+}
