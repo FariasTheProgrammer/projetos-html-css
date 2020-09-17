@@ -20,8 +20,8 @@
 
 .icon{
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background-size: cover;
 }
 
@@ -72,6 +72,42 @@
 }
 .icon-compartilhar:hover,
 .icon-compartilhar:focus {
+    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    cursor: pointer;
+}
+
+.icon-imagem{
+    background-image: url("/aep/img/imagem.svg");
+}
+.icon-imagem:hover,
+.icon-imagem:focus {
+    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    cursor: pointer;
+}
+
+.icon-arquivo{
+    background-image: url("/aep/img/arquivo.svg");
+}
+.icon-arquivo:hover,
+.icon-arquivo:focus {
+    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    cursor: pointer;
+}
+
+.icon-enquete{
+    background-image: url("/aep/img/enquete.svg");
+}
+.icon-enquete:hover,
+.icon-enquete:focus {
+    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    cursor: pointer;
+}
+
+.icon-calendario{
+    background-image: url("/aep/img/calendario.svg");
+}
+.icon-calendario:hover,
+.icon-calendario:focus {
     filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
     cursor: pointer;
 }
