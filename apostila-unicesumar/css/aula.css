@@ -24,6 +24,7 @@ header h1{
 p{
     text-align: justify;
     margin-top: 10px;
+    clear: both;
 }
 
 footer{
@@ -31,6 +32,11 @@ footer{
     background-repeat: no-repeat;
     background-position: right;
     background-size: 35px;
+}
+
+iframe{
+    border-style: none;
+    width: 100%;
 }
 
 .sum{
@@ -68,8 +74,9 @@ footer{
     text-decoration: none ;
 }
 
-.sumario li:hover{
-    text-decoration: underline overline;
+.sumario li a:hover{
+    background-color: whitesmoke;
+    color: #0F0F15
 }
 
 .codigo{
@@ -79,6 +86,14 @@ footer{
     border-radius: 5px;
     color: #25292E;
     border-left: 15px solid #A6FA62;
+}
+
+.exemplo{
+    border-left: 15px solid #faf062;
+}
+
+div.exemplo h5{
+    color: #070709;
 }
 
 .inicio{
