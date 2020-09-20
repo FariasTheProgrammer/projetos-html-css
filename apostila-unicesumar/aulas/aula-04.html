@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;/Aphostila&gt;</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/aula.css">
+    </head>
+<body>
+    <header>
+        <h1>
+            &lt;A<span class="titulo">ph</span>ostila&gt;
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../aulas.html" class="pg">Aulas</a></li>
+                <li><a href="https://phstefen.github.io" target="_blank" title="phStefen - Github">phStefen</a></li>
+                <li><a href="https://www.unicesumar.edu.br/home/" target="_blank" title="Unicesumar">Unicesumar</a></li>
+            </ul>
+        </nav>
+        <div style="clear: both;"></div>
+    </header>
+    <div class="sum">
+        <div class="sumario">
+            <div class="topo-sumario">
+                <h1>{Aula 04}</h1>
+            </div>
+            <div class="corpo-sumario">
+                <h3><em>Sumário</em></h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="#sec1">&lt;Display & Tags de Separação&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec2">&lt;Elementos Block & Inline&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec3">&lt;Tags de Agrupamentos&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec4">&lt;Inputs de Datas e Horas&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#fim">&lt;Próxima Aula&gt;</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <article id="sec1">
+        <h1 class="inicio">&lt;Display & Tags de Separaçãoe&gt;</h1>
+        <p>
+            Bem-vindo a 4º Aula de <em>HTML</em>. Nela nós veremos um pouco sobre elementos Block & Inline, e sobre algumas tags usadas para facilitar a estrutura do site.
+        </p>
+
+        <h2 id="sec2" class="inicio">&lt;Elementos Block & Inline&gt;</h2>
+        <p>
+            Falando agora em visual, temos que ter a noção que existem 2 tipos de display nas tags, os Block que ocupam uma "linha" inteira, e os Inline que ocupam apenas o seu tamanho. Para entender melhor, vamos ver o exemplo abaixo (Foi usado CSS para Facilitar o entendimento, mais a frente iremos ver o que é CSS e para que serve) 
+        </p>
+        <div class="codigo">
+            &lt;h1&gt;Elementos Block&lt;/h1&gt; <br>
+            &lt;p style="background-color: red;"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit ad, vitae est veritatis.<br>
+            &lt;/p&gt; <br>
+            &lt;ol style="background-color: green;"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item&lt;/li&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item&lt;/li&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item&lt;/li&gt; <br>
+            &lt;/ol&gt; <br>
+            <br> 
+            &lt;br&gt; <br>
+            <br>
+            &lt;h2&gt;Elementos Inline&lt;/h2&gt; <br>
+            &lt;span style="background-color: red;"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit ad, vitae est veritatis.<br>
+            &lt;/span&gt; <br>
+            &lt;span style="background-color: green;"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit ad, vitae est veritatis. <br>
+            &lt;/span"&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 01</h5>
+            <iframe src="aula-04-exemplo-01.html"></iframe>
+        </div>
+
+        <h2 id="sec3" class="inicio">&lt;Tags de Agrupamentos&gt;</h2>
+        <p>
+            Agora você verá mais algumas tags úteis para agrupar conteúdos, isso irá ajudar o navegador a defenir o que é importante e ajudará a você a se organizar melhor.
+        </p>
+        <div class="codigo">
+            &lt;header&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Cabeçalho&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menu<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menu<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>&lt;/header&gt;<br><br>&lt;main&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seção 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conteúdo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seção 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conteúdo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seção 3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conteúdo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&lt;/main&gt;<br><br>&lt;div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Conteúdo<br>&lt;/div&gt;<br><br>&lt;aside&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menu<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menu<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>&lt;/aside&gt;<br><br>&lt;footer&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Rodapé&lt;/h1&gt;<br>&lt;/footer&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 02</h5>
+            <iframe src="aula-04-exemplo-02.html"></iframe>
+        </div>
+        <p>
+            Quanta coisa né? Pois é.
+        </p>
+        <p>
+            Vamos por partes então:
+            <ul>
+                <li>&lt;header&gt;: É o Cabeçalho da página</li>
+                <li>&lt;nav&gt;: Navegação, é usada para defenir menus e derivados</li>
+                <li>&lt;main&gt;: Para defenir o corpo Principal se seu conteúdo</li>
+                <li>&lt;section&gt;: Define seções dentro da página</li>
+                <li>&lt;div&gt;: Separação normal, imagine que isto é uma caixa, você pode colocar o que quiser dentro dela</li>
+                <li>&lt;aside&gt;: Indica que algo que está nos cantos das páginas</li>
+                <li>&lt;footer&gt;: É o Rodapé da página</li>
+            </ul>
+        </p>
+        <p>
+            Caso não tenha ficado claro, essas tags são definições que podem ser usadas pelo navegador para definir importâncias. Por exemplo, se o navegador tiver uma função de acessibilidade, ele saberá que deverá começar pela &lt;main&gt;.
+        </p>
+
+        <h2 id="sec4" class="inicio">&lt;Atributos de Identificação & Classificação&gt;</h2>
+        <p>
+            Vamos agora dar uma breve iniciada na matéria de CSS, portanto vamos aprender um pouco sobre os atributos de <strong>id</strong> & <strong>class</strong>
+        </p>
+
+        <div class="codigo">
+            &lt;p id="p1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&lt;/p&gt;<br><br>&lt;p id="p2" class="importante"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&lt;/p&gt;<br><br>&lt;p id="p3" class="importante"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&lt;/p&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 03</h5>
+            <iframe src="aula-04-exemplo-03.html"></iframe>
+        </div>
+        <p>
+            O Atributo de <strong>id</strong> é um atributo global, todas as tags podem ter, no entanto ela é um atributo de <em>Identificação</em> então ela não pode repetir. Diferente do <strong>id</strong>, a <strong>class</strong> pode ser repetida quantas vezes quiser, por ser uma <em>Classificação</em>.
+        </p>
+
+        <div class="fim-div">
+            <h1 class="inicio" id="fim">&lt;/Inputs&gt;</h1>
+            <a class="fim" href="aula-03.html">Próxima Aula</a>
+        </div>
+    </article>
+
+    <footer class="aulas">
+        &COPY; 2020 &lt;/A<span class="titulo">ph</span>ostila&gt;
+        <div class="referencia">
+            Ícones feitos por <a href="https://www.flaticon.com/br/autores/good-ware" title="Good Ware" target="_blank">Good Ware</a> em <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank">www.flaticon.com</a>
+        </div>
+    </footer>
+</body>
+</html>

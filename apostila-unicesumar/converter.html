@@ -11,12 +11,15 @@
 </body>
 </html>
 
+
 <script>
     function converter(){
         area = document.getElementById("txt")
         var txt = area.value
         txt = txt.replaceAll('<', '&lt;')
         txt = txt.replaceAll('>', '&gt;')
+        txt = txt.replaceAll(/    /g,'&nbsp;&nbsp;&nbsp;&nbsp;' )
+        txt = txt.replaceAll(/(?:\r\n|\r|\n)/g, '<br>');
         area.value = txt
     }
 </script>
