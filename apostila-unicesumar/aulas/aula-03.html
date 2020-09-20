@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;/Aphostila&gt;</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/aula.css">
+    </head>
+<body>
+    <header>
+        <h1>
+            &lt;A<span class="titulo">ph</span>ostila&gt;
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../aulas.html" class="pg">Aulas</a></li>
+                <li><a href="https://phstefen.github.io" target="_blank" title="phStefen - Github">phStefen</a></li>
+                <li><a href="https://www.unicesumar.edu.br/home/" target="_blank" title="Unicesumar">Unicesumar</a></li>
+            </ul>
+        </nav>
+        <div style="clear: both;"></div>
+    </header>
+    <div class="sum">
+        <div class="sumario">
+            <div class="topo-sumario">
+                <h1>{Aula 03}</h1>
+            </div>
+            <div class="corpo-sumario">
+                <h3><em>Sumário</em></h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="#sec1">&lt;Inputs&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec2">&lt;Inputs com Texto&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec3">&lt;Inputs de Botões&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec4">&lt;Inputs de Datas e Horas&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#fim">&lt;Próxima Aula&gt;</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <article id="sec1">
+        <h1 class="inicio">&lt;Inputs&gt;</h1>
+        <p>
+            Bem-vindo a 3º Aula de <em>HTML</em>. Nela nós veremos um pouco sobre os mais diversos inputs disponíveis nessa linguagem de marcação.
+        </p>
+
+        <h2 id="sec2" class="inicio">&lt;Inputs com Texto&gt;</h2>
+        <p>
+            Usando &lt;input&gt; podemos criar campos de preenchimento, com ele podemos receber informações como Nomes, Email, Senhas e muitos outros. Segue uma lista simples com vários tipos de inputs.
+        </p>
+        <div class="codigo">
+            &lt;label&gt; Text: &lt;input type="text"&gt;&lt;/label&gt; <br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt; URL: &lt;input type="url"&gt;&lt;/label minhna namorada é top &gt; <br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt; E-mail: &lt;input type="email"&gt;&lt;/label&gt; <br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt; Number: &lt;input type="number"&gt;&lt;/label&gt; <br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt; Password: &lt;input type="password"&gt;&lt;/label&gt; <br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt; Tel: &lt;input type="tel"&gt;&lt;/label&gt;<br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt; Search: &lt;input type="search"&gt;&lt;/label&gt; <br>
+
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 01</h5>
+            <iframe src="aula-03-exemplo-01.html"></iframe>
+        </div>
+        <p>
+            O tipo do input irá variar de acordo com o atributo <strong>type</strong> que você colocar.
+        </p>
+        <p>
+            <ul>
+                <li>text: Texto</li>
+                <li>url: Usados para facilitar a identificação de Urls válidos</li>
+                <li>email: Usados para facilitar a identificação de Emails válidos</li>
+                <li>number: Permite apenas a entrada de números</li>
+                <li>password: Esconde o texto</li>
+                <li>tel:  Semelhante ao Texto, mas em dispositivos móveis irá abrir o teclado para telefone</li>
+                <li>number: Permite apenas a entrada de números</li>
+                <li>search: Usados para facilitar em pesquisas</li>
+            </ul>
+        </p>
+
+        <h2 id="sec3" class="inicio">&lt;Inputs de Botões&gt;</h2>
+        <p>
+            Estes inputs são botões que podem realizar algo após clicar neles
+        </p>
+        <div class="codigo">
+            &lt;form action=""&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;File: &lt;input type="file"&gt;&lt;/label&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt; &lt;br&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Reset: &lt;input type="reset"&gt;&lt;/label&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt; &lt;br&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Submit: &lt;input type="submit"&gt;&lt;/label&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt; &lt;br&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Button: &lt;input type="button" value="Botão"&gt;&lt;/label&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt; &lt;br&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Image: &lt;input type="image" value="Imagem" src="../../img/htmlcss.png"&gt;&lt;/label&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt; &lt;br&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Color: &lt;input type="color"&gt;&lt;/label&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt; &lt;br&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Radio: &lt;input type="radio" name="teste"&gt;1 &lt;input type="radio" name="teste"&gt;2&lt;/ label&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt; &lt;br&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Checkbox: &lt;input type="checkbox"&gt;1 &lt;input type="checkbox"&gt;2&lt;/label&gt; <br> &lt;/form&gt;
+
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 02</h5>
+            <iframe src="aula-03-exemplo-02.html"></iframe>
+        </div>
+        <p>
+            No exemplo acima nós temos uma tag nova, o &lt;form&gt;, ele é usado para defenir um grupo de inputs que serão usados para um formulário, ou seja, um lugar onde podemos pegar as informações forncedidas e reutiliza-las mais para frente.
+            <ul>
+                <li>file: Usados para importar arquivos, sendo eles imagens ou outras coisas</li>
+                <li>submit: Usados para concluir o preenchimento do formulário</li>
+                <li>reset: Usados para limpar os campos de um formulário</li>
+                <li>button: Um botão comum, pode ser usado para qualquer ação usando outras linguagens de programação</li>
+                <li>image: Um botão comum, mas como uma imagem para representar</li>
+                <li>color: Usados para permitir que o usuário escolha uma cor</li>
+                <li>radio: Um conjunto de botões que permitem selecionar apenas uma opção</li>
+                <li>checkbox: Um conjunto de botões que permitem selecionar várias opções</li>
+            </ul>
+        </p>
+
+        <h2 id="sec4" class="inicio">&lt;Inputs de Datas e Horas&gt;</h2>
+        <p>
+            Finalizando, temos os inputs de tipo de Datas e Horas:
+        </p>
+
+        <div class="codigo">
+            &lt;label&gt;Date: &lt;input type="date"&gt;&lt;/label&gt; <br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt;Date Time: &lt;input type="datetime-local"&gt;&lt;/label&gt; <br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt;Week: &lt;input type="week"&gt;&lt;/label&gt; <br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt;Month: &lt;input type="month"&gt;&lt;/label&gt; <br>
+            &lt;br&gt; &lt;br&gt; <br>
+            &lt;label&gt;Time: &lt;input type="time"&gt;&lt;/label&gt; <br>
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 03</h5>
+            <iframe src="aula-03-exemplo-03.html"></iframe>
+        </div>
+        <p>
+            No exemplo acima nós temos uma tag nova, o &lt;form&gt;, ele é usado para defenir um grupo de inputs que serão usados para um formulário, ou seja, um lugar onde podemos pegar as informações forncedidas e reutiliza-las mais para frente.
+            <ul>
+                <li>date: Usados apenas para pegar a Data</li>
+                <li>datetime-local: Usados pegar a Data junto com a Hora</li>
+                <li>week: Usados para pegar uma Semana do Ano</li>
+                <li>month: Usados para pegar um Mês do Ano</li>
+                <li>time: Usados para pegar Horas e Minutos</li>
+            </ul>
+        </p>
+
+        <div class="fim-div">
+            <h1 class="inicio" id="fim">&lt;/Inputs&gt;</h1>
+            <a class="fim" href="aula-03.html">Próxima Aula</a>
+        </div>
+    </article>
+
+    <footer class="aulas">
+        &COPY; 2020 &lt;/A<span class="titulo">ph</span>ostila&gt;
+        <div class="referencia">
+            Ícones feitos por <a href="https://www.flaticon.com/br/autores/good-ware" title="Good Ware" target="_blank">Good Ware</a> em <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank">www.flaticon.com</a>
+        </div>
+    </footer>
+</body>
+</html>

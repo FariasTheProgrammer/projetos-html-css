@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="texto" id="txt" cols="100" rows="30"></textarea> <br>
+    <button onclick="converter()">Converter</button>
+</body>
+</html>
+
+<script>
+    function converter(){
+        area = document.getElementById("txt")
+        var txt = area.value
+        txt = txt.replaceAll('<', '&lt;')
+        txt = txt.replaceAll('>', '&gt;')
+        area.value = txt
+    }
+</script>

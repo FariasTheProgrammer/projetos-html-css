@@ -6,19 +6,6 @@
     <title>&lt;/Aphostila&gt;</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/aula.css">
-    <style>
-        .v{
-            color: green;
-        }
-
-        .am{
-            color: yellow;
-        }
-
-        .az{
-            color: blue;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -57,6 +44,9 @@
                             <a href="#sec4">&lt;Links&gt;</a>
                         </li>
                         <li>
+                            <a href="#sec5">&lt;Imagens&gt;</a>
+                        </li>
+                        <li>
                             <a href="#fim">&lt;Próxima Aula&gt;</a>
                         </li>
                     </ul>
@@ -67,7 +57,7 @@
     <article id="sec1">
         <h1 class="inicio">&lt;Listas&gt;</h1>
         <p>
-            Bem-vindo a 2º Aula de <em>HTML</em>. Nela nós veremos um pouco sobre listas ordenadas, desordenadas, aninhadas e de definição.
+            Bem-vindo a 2º Aula de <em>HTML</em>. Nela nós veremos um pouco sobre listas, links e imagens.
         </p>
         <p>
             Primeiramente pelo começo, vamos iniciar pelo início: <br>
@@ -166,20 +156,39 @@
         <div class="codigo">
             &lt;a href="https://phstefen.github.io/" target="_blank"&gt; Página Incrível do Ph &lt;/a&gt;
             <br> &lt;br&gt; <br>
-            &lt;a href="mailto:ph.stefen@gmail.com"&gt; Enviar Email para o Professor &lt;/a&gt;
+            &lt;a href="mailto:ph.stefen@gmail.com"&gt; Enviar um E-mail para mim &lt;/a&gt;
         </div>
         <div class="codigo exemplo">
-            <h5 class="iframe">Exemplo 03</h5>
+            <h5 class="iframe">Exemplo 04</h5>
             <iframe src="aula-02-exemplo-04.html"></iframe>
         </div>
         <p>
             Repare que no primeiro link temos um atributo <strong>target</strong>, ele serve para definir se o link irá abrir uma página na guia atual ou em uma nova, no exemplo ele abrirá em uma nova guia, para abrir na atual é só não utilizar esse atributo.
+        </p>
+
+        <h2 id="sec5" class="inicio">&lt;Imagens&gt;</h2>
+        <p>
+            Usando as tags &lt;img&gt; podemos adicionar imagens na página, usando links de imagens ou usando imagens que estão em pastas diferentes do projeto. Para definir devemos usar o atributo <strong>src</strong>
+        </p>
+
+        <div class="codigo">
+            &lt;img src="https://cdn.mos.cms.futurecdn.net/hFm4iWXhbw4c4rdcMH8tUD.jpg" height="100"&gt;
+            <br>&lt;br&gt;
+            <br>&lt;img src="../img/unicesumar.png" height="100"&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 05</h5>
+            <iframe src="aula-02-exemplo-05.html"></iframe>
+        </div>
+        <p>
+            Ao utilizar atributos <strong>height</strong> podemos definir a altura da imagem (em pixels), consequentemente podemos usar <strong>width</strong> para a largura
         </p>
         
         <div class="fim-div">
             <h1 class="inicio" id="fim">&lt;/Listas&gt;</h1>
             <a class="fim" href="aula-03.html">Próxima Aula</a>
         </div>
+        
     </article>
 
     <footer class="aulas">
