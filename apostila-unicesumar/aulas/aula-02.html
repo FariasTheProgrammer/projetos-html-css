@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;/Aphostila&gt;</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/aula.css">
+    <style>
+        .v{
+            color: green;
+        }
+
+        .am{
+            color: yellow;
+        }
+
+        .az{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            &lt;A<span class="titulo">ph</span>ostila&gt;
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../aulas.html" class="pg">Aulas</a></li>
+                <li><a href="https://phstefen.github.io" target="_blank" title="phStefen - Github">phStefen</a></li>
+                <li><a href="https://www.unicesumar.edu.br/home/" target="_blank" title="Unicesumar">Unicesumar</a></li>
+            </ul>
+        </nav>
+        <div style="clear: both;"></div>
+    </header>
+    <div class="sum">
+        <div class="sumario">
+            <div class="topo-sumario">
+                <h1>{Aula 02}</h1>
+            </div>
+            <div class="corpo-sumario">
+                <h3><em>Sumário</em></h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="#sec1">&lt;Listas&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec2">&lt;Aninhamento de Listas&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec3">&lt;Lista de Definição&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec4">&lt;Links&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#fim">&lt;Próxima Aula&gt;</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <article id="sec1">
+        <h1 class="inicio">&lt;Listas&gt;</h1>
+        <p>
+            Bem-vindo a 2º Aula de <em>HTML</em>. Nela nós veremos um pouco sobre listas ordenadas, desordenadas, aninhadas e de definição.
+        </p>
+        <p>
+            Primeiramente pelo começo, vamos iniciar pelo início: <br>
+            Podemos usar as tags &lt;ol&gt; e &lt;ul&gt; (Ordenadas e Desordenadas respectivamente) para começar a lista, e então, usar a tag &lt;li&gt; (Item de Lista) para cada linha que você desejar. Vejamos um Exmplo:
+        </p>
+        <div class="codigo">
+            &lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+            Item
+            &lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+            Item
+            &lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+            Item
+            &lt;/li&gt;<br>
+            &lt;/ul&gt;
+            <br> <br>
+            &lt;ol&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+            Item
+            &lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+            Item
+            &lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+            Item
+            &lt;/li&gt;<br>
+            &lt;/ol&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 01</h5>
+            <iframe src="aula-02-exemplo-01.html"></iframe>
+        </div>
+
+        <p>
+            Como visto, os &lt;ol&gt; apresentaram os itens com um número atrás indicando seu índice, enquanto as &lt;ul&gt; apenas colocaram uma "bolinha", como se fossem tópicos
+        </p>
+
+        <h2 id="sec2" class="inicio">&lt;Aninhamento de Listas&gt;</h2>
+        <p>
+            Podemos introduzir nas listas mais listas, assim, produziremos um aninhamento de listas:
+        </p>
+        <div class="codigo">
+            &lt;ul&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+            Item
+            &lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+            Item
+            &lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+            Item
+            &lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item &lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item &lt;/li&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item &lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 02</h5>
+            <iframe src="aula-02-exemplo-02.html"></iframe>
+        </div>
+
+        <h2 id="sec3" class="inicio">&lt;Lista de Definição&gt;</h2>
+        <p>
+            Estas listas são um pouco diferentes das demais, vamos utilizar para elas as tags &lt;dl&gt; (Lista de Definição), &lt;dt&gt; (Termo da Deninição) & &lt;dd&gt; (Definição). Levando em conta que em uma &lt;dt&gt; pode-se ter mais de uma &lt;dd&gt;.
+        </p>
+
+        <div class="codigo">
+            &lt;dl&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt; Item 1 &lt;/dt&gt; 
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt; Definição 1 &lt;/dd&gt; 
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt; Item 2 &lt;/dt&gt;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt; Definição 2.1 &lt;/dd&gt;
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt; Definição 2.2 &lt;/dd&gt;
+            <br>&lt;/dl&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 03</h5>
+            <iframe src="aula-02-exemplo-03.html"></iframe>
+        </div>
+
+        <h2 id="sec4" class="inicio">&lt;Links&gt;</h2>
+        <p>
+            Os famosos link. Imagino que você já esteja acostumado com eles, ou pelo menos saiba o que são. Em HTML os links são definidos por &lt;a&gt;, e nele deve-se colocar um atributo chamado <strong>href</strong> para que assim poçamos colocar um link de um site ou parte da página.
+        </p>
+        <p>
+            Vamos para os Exemplos:
+        </p>
+
+        <div class="codigo">
+            &lt;a href="https://phstefen.github.io/" target="_blank"&gt; Página Incrível do Ph &lt;/a&gt;
+            <br> &lt;br&gt; <br>
+            &lt;a href="mailto:ph.stefen@gmail.com"&gt; Enviar Email para o Professor &lt;/a&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 03</h5>
+            <iframe src="aula-02-exemplo-04.html"></iframe>
+        </div>
+        <p>
+            Repare que no primeiro link temos um atributo <strong>target</strong>, ele serve para definir se o link irá abrir uma página na guia atual ou em uma nova, no exemplo ele abrirá em uma nova guia, para abrir na atual é só não utilizar esse atributo.
+        </p>
+        
+        <div class="fim-div">
+            <h1 class="inicio" id="fim">&lt;/Listas&gt;</h1>
+            <a class="fim" href="aula-03.html">Próxima Aula</a>
+        </div>
+    </article>
+
+    <footer class="aulas">
+        &COPY; 2020 &lt;/A<span class="titulo">ph</span>ostila&gt;
+        <div class="referencia">
+            Ícones feitos por <a href="https://www.flaticon.com/br/autores/good-ware" title="Good Ware" target="_blank">Good Ware</a> em <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank">www.flaticon.com</a>
+        </div>
+    </footer>
+</body>
+</html>
