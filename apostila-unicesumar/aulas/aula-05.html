@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;/Aphostila&gt;</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/aula.css">
+    </head>
+<body>
+    <header>
+        <h1>
+            &lt;A<span class="titulo">ph</span>ostila&gt;
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../aulas.html" class="pg">Aulas</a></li>
+                <li><a href="https://phstefen.github.io" target="_blank" title="phStefen - Github">phStefen</a></li>
+                <li><a href="https://www.unicesumar.edu.br/home/" target="_blank" title="Unicesumar">Unicesumar</a></li>
+            </ul>
+        </nav>
+        <div style="clear: both;"></div>
+    </header>
+    <div class="sum">
+        <div class="sumario">
+            <div class="topo-sumario">
+                <h1>{Aula 05}</h1>
+            </div>
+            <div class="corpo-sumario">
+                <h3><em>Sumário</em></h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="#sec1">&lt;Tabelas & Identificação&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec2">&lt;Tabelas&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec3">&lt;Formulários&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#sec4">&lt;Identificação & Classificação&gt;</a>
+                        </li>
+                        <li>
+                            <a href="#fim">&lt;Próxima Aula&gt;</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <article id="sec1">
+        <h1 class="inicio">&lt;Display & Tags de Separaçãoe&gt;</h1>
+        <p>
+            Bem-vindo a 5º Aula de <em>HTML</em>. Nela nós veremos um pouco sobre Tabelas e sobre Identificação e Classificação que serão de grande ajuda em CSS.
+        </p>
+
+        <h2 id="sec2" class="inicio">&lt;Tabelas&gt;</h2>
+        <p>
+            As Tabelas foram tags muito utilizadas antigamentes para fazer o layout de sites, hoje em dia é um método considerado ultrapassado e não é muito bom para o usuário, principalmente para usuários mobile. Mas ainda é importante aprender para usar como tabelas mesmo.
+        </p>
+        <p>
+            Para criar uma tabela usamos a tag &lt;table&gt;, dentro dela iremos usar as tags &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;td&gt; & &lt;th&gt;. Vamos fazer um Exemplo:
+        </p>
+        <div class="codigo">
+            &lt;table border="1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Coluna 1&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Coluna 2&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linha 1 - Coluna 1&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linha 1 - Coluna 2&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linha 2 - Coluna 1&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linha 2 - Coluna 2&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tfoot&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Rodapé 1&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Rodapé 2&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tfoot&gt;<br>&lt;/table&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 01</h5>
+            <iframe src="aula-05-exemplo-01.html"></iframe>
+        </div>
+        <p>
+            Repare que em &lt;table&gt; temos um atributo <strong>border</strong>, ela define o tamanho da borda em pixels.
+        </p>
+
+        <h2 id="sec3" class="inicio">&lt;Formulários&gt;</h2>
+        <p>
+            Como visto previamente e bem rapidamente, formulários servem para receber as informações que os usuários preenchem em uma página, no entanto para utiliza-los corretamente devmos conhecer os seguintes atributos: <strong>method</strong> & <strong>action</strong>.
+        </p>
+        <div class="codigo">
+            &lt;h4&gt;Método GET&lt;/h4&gt;<br>&lt;form action="teste.html" method="GET"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Nome: &lt;input type="text" placeholder="Insira seu Nome"&gt;&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Enviar"&gt;<br>&lt;/form&gt;<br><br>&lt;br&gt;<br><br>&lt;h4&gt;Método POST&lt;/h4&gt;<br>&lt;form action="teste.html" method="POST"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Nome: &lt;input type="text" placeholder="Insira seu Nome"&gt;&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Senha: &lt;input type="password" placeholder="Insira sua Senha"&gt;&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Logar"&gt;<br>&lt;/form&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 01</h5>
+            <iframe src="aula-05-exemplo-02.html"></iframe>
+        </div>
+        <p>
+            O Atributo <strong>method</strong> serve para definirmos como os valores dos inputs passarão para a página que aparece em <strong>action</strong>. O <em>GET</em> deixa os valores visíveis na URL então não é recomendado para uma tela de Login por exemplo. Nestes casos, onde é importante ter a segurança do usuário, usamos o método <em>POST</em>, onde os dados não são visíveis na URL.
+        </p>
+
+        <h2 id="sec4" class="inicio">&lt;Atributos de Identificação & Classificação&gt;</h2>
+        <p>
+            Vamos agora dar uma breve iniciada na matéria de CSS, portanto vamos aprender um pouco sobre os atributos de <strong>id</strong> & <strong>class</strong>
+        </p>
+
+        <div class="codigo">
+            &lt;p id="p1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&lt;/p&gt;<br><br>&lt;p id="p2" class="importante"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&lt;/p&gt;<br><br>&lt;p id="p3" class="importante"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&lt;/p&gt;
+        </div>
+        <div class="codigo exemplo">
+            <h5 class="iframe">Exemplo 03</h5>
+            <iframe src="aula-04-exemplo-03.html"></iframe>
+        </div>
+        <p>
+            O Atributo de <strong>id</strong> é um atributo global, todas as tags podem ter, no entanto ela é um atributo de <em>Identificação</em> então ela não pode repetir. Diferente do <strong>id</strong>, a <strong>class</strong> pode ser repetida quantas vezes quiser, por ser uma <em>Classificação</em>.
+        </p>
+
+        <div class="fim-div">
+            <h1 class="inicio" id="fim">&lt;/Inputs&gt;</h1>
+            <a class="fim" href="aula-03.html">Próxima Aula</a>
+        </div>
+    </article>
+
+    <footer class="aulas">
+        &COPY; 2020 &lt;/A<span class="titulo">ph</span>ostila&gt;
+        <div class="referencia">
+            Ícones feitos por <a href="https://www.flaticon.com/br/autores/good-ware" title="Good Ware" target="_blank">Good Ware</a> em <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank">www.flaticon.com</a>
+        </div>
+    </footer>
+</body>
+</html>
