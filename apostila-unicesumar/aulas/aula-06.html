@@ -32,19 +32,16 @@
                 <p>
                     <ul>
                         <li>
-                            <a href="#sec1">&lt;Tabelas & Identificação&gt;</a>
+                            <a href="#sec1">&lt;CSS&gt;</a>
                         </li>
                         <li>
-                            <a href="#sec2">&lt;Tabelas&gt;</a>
+                            <a href="#sec2">&lt;Seletores&gt;</a>
                         </li>
                         <li>
-                            <a href="#sec3">&lt;Formulários&gt;</a>
+                            <a href="#sec3">&lt;Propriedades&gt;</a>
                         </li>
                         <li>
-                            <a href="#sec4">&lt;Identificação & Classificação&gt;</a>
-                        </li>
-                        <li>
-                            <a href="#fim">&lt;Próxima Aula&gt;</a>
+                            <a href="#fim">&lt;Obrigado por Ler tudo!&gt;</a>
                         </li>
                     </ul>
                 </p>
@@ -52,63 +49,80 @@
         </div>
     </div>
     <article id="sec1">
-        <h1 class="inicio">&lt;Display & Tags de Separaçãoe&gt;</h1>
+        <h1 class="inicio">&lt;CSS&gt;</h1>
         <p>
-            Bem-vindo a 5º Aula de <em>HTML</em>. Nela nós veremos um pouco sobre Tabelas e sobre Identificação e Classificação que serão de grande ajuda em CSS.
-        </p>
-
-        <h2 id="sec2" class="inicio">&lt;Tabelas&gt;</h2>
-        <p>
-            As Tabelas foram tags muito utilizadas antigamentes para fazer o layout de sites, hoje em dia é um método considerado ultrapassado e não é muito bom para o usuário, principalmente para usuários mobile. Mas ainda é importante aprender para usar como tabelas mesmo.
+            Bem-vindo a 6º Aula e Última Aula de <em>HTML</em>. Nela nós veremos um pouco sobre CSS.
         </p>
         <p>
-            Para criar uma tabela usamos a tag &lt;table&gt;, dentro dela iremos usar as tags &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;td&gt; & &lt;th&gt;. Vamos fazer um Exemplo:
+            Quando se trata de CSS temos três opções:
+            <ul>
+                <li>Fazer uma Folha de Estilo</li>
+                <li>Usar no mesmo Arquivo</li>
+                <li>Usar nas Tags</li>
+            </ul>
         </p>
         <div class="codigo">
-            &lt;table border="1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Coluna 1&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Coluna 2&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linha 1 - Coluna 1&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linha 1 - Coluna 2&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linha 2 - Coluna 1&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linha 2 - Coluna 2&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tfoot&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Rodapé 1&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Rodapé 2&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tfoot&gt;<br>&lt;/table&gt;
+            &lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>&lt;/head&gt;<br><br>&lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p style=" "&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>&lt;/body&gt;
+        </div>
+        <p>
+            Dentro de &lt;head&gt; podemos usar um &lt;link&gt; para referenciar um arquivo com extensão .css para ser a nossa <em>Folha de Estilo</em>, ou podemos usar a tag &lt;style&gt; para não precisar criar uma arquivo separado.
+        </p>
+        <p>
+            Outra opção é usar o atributo <strong>style</strong> em cada tag que você quiser usar o CSS assim como o &lt;p&gt;
+        </p>
+
+        <h2 id="sec2" class="inicio">&lt;Seletores&gt;</h2>
+        <p>
+            Vamos ver agora o corpo de um Seletor em CSS:
+        </p>
+        <div class="codigo">
+            h1{<br>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 12px;<br>} <br>
+            tag/id/classe{<br>&nbsp;&nbsp;&nbsp;&nbsp;propriedade: valor;<br>}
+        </div>
+        <p>
+            O Esqueleto é como citado acima, primeiro a tag/id/classe e depois suas propriedades e valores.
+        </p>
+        <p>
+            Essa primeira parte do esqueleto é chamada de Seletor, e é como iremos identificar o que terá o estilo modificado. Vamos ver agora um exemplo prático:
+        </p>
+        <div class="codigo">
+            &lt;!DOCTYPE html&gt;<br>&lt;html lang="pt-BR"&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Exemplo 01&lt;/title&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#p1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.importante{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="p1" class="importante"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="p2" class="importante"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="p3" class="importante"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="p4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;
         </div>
         <div class="codigo exemplo">
             <h5 class="iframe">Exemplo 01</h5>
-            <iframe src="aula-05-exemplo-01.html"></iframe>
+            <iframe src="aula-06-exemplo-01.html"></iframe>
         </div>
         <p>
-            Repare que em &lt;table&gt; temos um atributo <strong>border</strong>, ela define o tamanho da borda em pixels.
+            CSS usa um modelo cascata, ou seja, as propriedades vão adicionando e se sobrepondo de acordo com sua especificidade. <br>
+            Repare que temos um <em>.</em> e um <em>#</em> nos seletores, o <em>.</em> significa <strong>id</strong> enquanto o <em>#</em> representa <strong>class</strong>
+        </p>
+        <p>
+            Em &lt;style&gt;, definimos que todo &lt;p&gt; será verde (Genérico), mas que todo parágrafo que tiver a Classificação <em>importante</em> terá a cor vermelha (Mediano), e mesmo assim o primeiro parágrafo tem a cor azul, pois definimos que o elemento de <strong>id</strong> p1 terá a cor azul (Específico).
+        </p>
+        <p>
+            Então em ordem de importância e especificidade: ID > CLASS > TAG 
         </p>
 
-        <h2 id="sec3" class="inicio">&lt;Formulários&gt;</h2>
+        <h2 id="sec3" class="inicio">&lt;Propriedades&gt;</h2>
         <p>
-            Como visto previamente e bem rapidamente, formulários servem para receber as informações que os usuários preenchem em uma página, no entanto para utiliza-los corretamente devmos conhecer os seguintes atributos: <strong>method</strong> & <strong>action</strong>.
+            CSS é um mundo muito vasto, ele possue diversos atributos diferenciados e é impossível ensinar todos sem que você faça uma pesquisa própria, por isso, vou recomendar que você use o site <a href="https://www.w3schools.com/">w3schools</a>.
+        </p>
+        <p>
+            Este site tem tudo que você possa imaginar sobre HTML & CSS, faça um bom proveito e obrigado por ler até aqui!
+        </p>
+        <p>
+            Caso queira ver quais propriedades eu usei para fazer estas aulas, segue abaixo:
         </p>
         <div class="codigo">
-            &lt;h4&gt;Método GET&lt;/h4&gt;<br>&lt;form action="teste.html" method="GET"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Nome: &lt;input type="text" placeholder="Insira seu Nome"&gt;&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Enviar"&gt;<br>&lt;/form&gt;<br><br>&lt;br&gt;<br><br>&lt;h4&gt;Método POST&lt;/h4&gt;<br>&lt;form action="teste.html" method="POST"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Nome: &lt;input type="text" placeholder="Insira seu Nome"&gt;&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Senha: &lt;input type="password" placeholder="Insira sua Senha"&gt;&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Logar"&gt;<br>&lt;/form&gt;
+            header{<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align-last: justify;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #070709;<br>}<br><br>h2.inicio{<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 50px;<br>}<br><br>mark{<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #070709;<br>}<br><br>nav{<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #070709;<br>&nbsp;&nbsp;&nbsp;&nbsp;display: inline-flex;<br>}<br><br>header h1{<br>&nbsp;&nbsp;&nbsp;&nbsp;display: inline-flex;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 50px;<br>}<br><br>p{<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: justify;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 10px;<br>&nbsp;&nbsp;&nbsp;&nbsp;clear: both;<br>}<br><br>footer{<br>&nbsp;&nbsp;&nbsp;&nbsp;background-image: url('../img/aulas.svg');<br>&nbsp;&nbsp;&nbsp;&nbsp;background-repeat: no-repeat;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-position: right;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-size: 35px;<br>}<br><br>iframe{<br>&nbsp;&nbsp;&nbsp;&nbsp;border-style: none;<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br>}<br><br>.sum{<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>}<br><br>.topo-sumario h1{<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 3px;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #25292E;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: whitesmoke;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 10px 10px 0 0;<br>}<br><br>.corpo-sumario{<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 0 50px;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin: 0 20px;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 5px;<br>}<br><br>.corpo-sumario li{<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: justify;<br>}<br><br>.sumario{<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 10px;<br>&nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 10px;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-left: 5px solid #0F0F15;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-right: 5px solid #0F0F15;<br>}<br><br>.sumario a{<br>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none ;<br>}<br><br>.sumario li a:hover{<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: whitesmoke;<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #0F0F15<br>}<br><br>.codigo{<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 10px;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: whitesmoke;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 5px;<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #25292E;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-left: 15px solid #A6FA62;<br>}<br><br>.exemplo{<br>&nbsp;&nbsp;&nbsp;&nbsp;border-left: 15px solid #faf062;<br>}<br><br>div.exemplo h5{<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #070709;<br>}<br><br>.inicio{<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: rgb(245, 245, 245);<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 5px;<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #25292E;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-left: 15px solid #2B6566;<br>}<br><br>.fim-div{<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 40px;<br>&nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>&nbsp;&nbsp;&nbsp;&nbsp;justify-content: space-between;<br>}<br><br>.fim-div .inicio{<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 70%;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-right: 10px;<br>}<br><br>.fim{<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f5f5f5;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 5px;<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #25292E;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-right: 15px solid #2B6566;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5em;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bolder;<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 30%;<br>}<br><br>.fim:hover{<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #25292E;<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #2B6566;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-right-color:  #f5f5f5;<br>}
         </div>
-        <div class="codigo exemplo">
-            <h5 class="iframe">Exemplo 01</h5>
-            <iframe src="aula-05-exemplo-02.html"></iframe>
-        </div>
-        <p>
-            O Atributo <strong>method</strong> serve para definirmos como os valores dos inputs passarão para a página que aparece em <strong>action</strong>. O <em>GET</em> deixa os valores visíveis na URL então não é recomendado para uma tela de Login por exemplo. Nestes casos, onde é importante ter a segurança do usuário, usamos o método <em>POST</em>, onde os dados não são visíveis na URL.
-        </p>
-
-        <h2 id="sec4" class="inicio">&lt;Atributos de Identificação & Classificação&gt;</h2>
-        <p>
-            Vamos agora dar uma breve iniciada na matéria de CSS, portanto vamos aprender um pouco sobre os atributos de <strong>id</strong> & <strong>class</strong>
-        </p>
-
         <div class="codigo">
-            &lt;p id="p1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&lt;/p&gt;<br><br>&lt;p id="p2" class="importante"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&lt;/p&gt;<br><br>&lt;p id="p3" class="importante"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>&lt;/p&gt;
+            *{<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;<br>&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>}<br><br>body{<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #25292E;<br>}<br><br>.titulo{<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #A6FA62;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;<br>}<br><br>.pg{<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #A6FA62;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;<br>}<br><br>header h1{<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bolder;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 20px;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 100px;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #070709;<br>}<br><br>nav{<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #0F0F15;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: end;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 0 0 10px 10px;<br>}<br><br>nav ul li{<br>&nbsp;&nbsp;&nbsp;&nbsp;display: inline-flex;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-left: -5px;<br>}<br><br>nav ul a{<br>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5em;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px 20px;<br>}<br><br>nav ul li a:hover{<br>&nbsp;&nbsp;&nbsp;&nbsp;color: #A6FA62;<br>}<br><br>article{<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: justify;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #0F0F15;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin: 10px 10px 60px 10px;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 20px;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 10px;<br>}<br><br>article ul{<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 10px;<br>}<br><br>article ul li{<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 30px;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-left: 20px;<br>}<br><br>article ul p a:hover{<br>&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>}<br><br>footer{<br>&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;<br>&nbsp;&nbsp;&nbsp;&nbsp;position: fixed;<br>&nbsp;&nbsp;&nbsp;&nbsp;bottom: 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px 0 10px 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #070709;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>}<br><br>.index{<br>&nbsp;&nbsp;&nbsp;&nbsp;background-image: url('../img/inicio.svg');<br>&nbsp;&nbsp;&nbsp;&nbsp;background-repeat: no-repeat;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-position: right;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-size: 35px;<br>}<br><br>.aulas{<br>&nbsp;&nbsp;&nbsp;&nbsp;background-image: url('../img/aulas.svg');<br>&nbsp;&nbsp;&nbsp;&nbsp;background-repeat: no-repeat;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-position: right;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-size: 35px;<br>}<br><br>.referencia{<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size: .5em;<br>}
         </div>
-        <div class="codigo exemplo">
-            <h5 class="iframe">Exemplo 03</h5>
-            <iframe src="aula-05-exemplo-03.html"></iframe>
-        </div>
-        <p>
-            O Atributo de <strong>id</strong> é um atributo global, todas as tags podem ter, no entanto ela é um atributo de <em>Identificação</em> então ela não pode repetir. Diferente do <strong>id</strong>, a <strong>class</strong> pode ser repetida quantas vezes quiser, por ser uma <em>Classificação</em>.
-        </p>
-
+        
         <div class="fim-div">
-            <h1 class="inicio" id="fim">&lt;/Inputs&gt;</h1>
-            <a class="fim" href="aula-03.html">Próxima Aula</a>
+            <h1 class="inicio" id="fim">&lt;/CSS&gt;</h1>
+            <a class="fim" href="../index.html">Início</a>
         </div>
     </article>
 
