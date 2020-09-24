@@ -1,5 +1,46 @@
+.badge-custom{
+    background: #723dbe;
+    color: #fff;
+}
+
+.btn-custom{
+    background: #b682ff;
+    color: #fff;
+}
+
+.btn-custom:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:active:focus{
+    background: #54229d;
+    border-color: #54229d;
+    box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+    color: #fff;
+}
+
+
+.input-custom:focus,
+.input-custom:hover,
+.input-custom:active,
+.input-custom:active:focus{
+    border-color: #54229d;
+    box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+}
+
+.border-custom{
+    border: solid 1px #54229d;
+}
+
 .sidebar{
+    box-shadow: inset 0 0 .2em black;
     height: 100%;
+    background: #eee;
+}
+
+.logo{
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .perfil{
@@ -30,7 +71,7 @@
 }
 .icon-home:hover,
 .icon-home:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
 }
 
 .icon-message{
@@ -38,7 +79,7 @@
 }
 .icon-message:hover,
 .icon-message:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
 }
 
 .icon-notification{
@@ -46,7 +87,7 @@
 }
 .icon-notification:hover,
 .icon-notification:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
 }
 
 .icon-comentar{
@@ -54,7 +95,7 @@
 }
 .icon-comentar:hover,
 .icon-comentar:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
     cursor: pointer;
 }
 
@@ -63,7 +104,7 @@
 }
 .icon-curti:hover,
 .icon-curti:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
     cursor: pointer;
 }
 
@@ -72,7 +113,7 @@
 }
 .icon-compartilhar:hover,
 .icon-compartilhar:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
     cursor: pointer;
 }
 
@@ -81,7 +122,7 @@
 }
 .icon-imagem:hover,
 .icon-imagem:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
     cursor: pointer;
 }
 
@@ -90,7 +131,7 @@
 }
 .icon-arquivo:hover,
 .icon-arquivo:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
     cursor: pointer;
 }
 
@@ -99,7 +140,7 @@
 }
 .icon-enquete:hover,
 .icon-enquete:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
     cursor: pointer;
 }
 
@@ -108,10 +149,10 @@
 }
 .icon-calendario:hover,
 .icon-calendario:focus {
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
     cursor: pointer;
 }
 
 .icon-page{
-    filter: invert(59%) sepia(22%) saturate(1068%) hue-rotate(143deg) brightness(90%) contrast(94%);
+    filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
 }
