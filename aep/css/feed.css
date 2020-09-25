@@ -86,7 +86,7 @@
 }
 
 .icon-home{
-    background-image: url("/aep/img/home.svg");
+    background-image: url("../img/home.svg");
 }
 .icon-home:hover,
 .icon-home:focus {
@@ -94,7 +94,7 @@
 }
 
 .icon-message{
-    background-image: url("/aep/img/message.svg");
+    background-image: url("../img/message.svg");
 }
 .icon-message:hover,
 .icon-message:focus {
@@ -102,7 +102,7 @@
 }
 
 .icon-notification{
-    background-image: url("/aep/img/notification.svg");
+    background-image: url("../img/notification.svg");
 }
 .icon-notification:hover,
 .icon-notification:focus {
@@ -110,7 +110,7 @@
 }
 
 .icon-comentar{
-    background-image: url("/aep/img/comentar.svg");
+    background-image: url("../img/comentar.svg");
 }
 .icon-comentar:hover,
 .icon-comentar:focus {
@@ -119,7 +119,7 @@
 }
 
 .icon-curti{
-    background-image: url("/aep/img/curti.svg");
+    background-image: url("../img/curti.svg");
 }
 .icon-curti:hover,
 .icon-curti:focus {
@@ -128,7 +128,7 @@
 }
 
 .icon-compartilhar{
-    background-image: url("/aep/img/compartilhar.svg");
+    background-image: url("../img/compartilhar.svg");
 }
 .icon-compartilhar:hover,
 .icon-compartilhar:focus {
@@ -137,7 +137,7 @@
 }
 
 .icon-imagem{
-    background-image: url("/aep/img/imagem.svg");
+    background-image: url("../img/imagem.svg");
 }
 .icon-imagem:hover,
 .icon-imagem:focus {
@@ -146,7 +146,7 @@
 }
 
 .icon-arquivo{
-    background-image: url("/aep/img/arquivo.svg");
+    background-image: url("../img/arquivo.svg");
 }
 .icon-arquivo:hover,
 .icon-arquivo:focus {
@@ -155,7 +155,7 @@
 }
 
 .icon-enquete{
-    background-image: url("/aep/img/enquete.svg");
+    background-image: url("../img/enquete.svg");
 }
 .icon-enquete:hover,
 .icon-enquete:focus {
@@ -164,7 +164,7 @@
 }
 
 .icon-calendario{
-    background-image: url("/aep/img/calendario.svg");
+    background-image: url("../img/calendario.svg");
 }
 .icon-calendario:hover,
 .icon-calendario:focus {
