@@ -18,6 +18,16 @@
   <title>Página Inicial \ BootClass</title>
   </head>
   <body>
+    <div
+    aria-live="polite" 
+    aria-atomic="true" 
+    class="position-relative">
+    <div 
+      class="position-absolute" 
+      id="toast-place" 
+      style="top:20px; right:20px; z-index: 1000;"></div>
+    </div>
+
     <div class="container-fluid">
       <div class="row">
         
@@ -25,15 +35,15 @@
         <div class="col-3 position-fixed sidebar border-right px-4 py-2 logo">
           <!--ANCHOR Meu Perfil-->
           <div class="list-group mt-1">
-            <a href="perfil.html" class="list-group-item list-group-item-action container">
+            <a href="" onclick="localStorage.lembrar = 'false'" class="list-group-item list-group-item-action container">
               <div class="row">
                 <div class="col-auto">
                   <img src="img/perfil.svg" alt="" width="60" height="60" class="rounded-circle">
                 </div>
-                <div class="col text-left">
-                  <span>Nome do Usário</span>
+                <div class="col-auto text-left">
+                  <span id="usernome">Nome do Usário</span>
                   <br>
-                  <span>@Usuario</span>
+                  <span>@<span id="useruser">Usuario</span></span>
                 </div>
                 <div class="col text-right">
                   <img src="img/expandir.svg" alt="" width="20" height="60" >
@@ -89,14 +99,14 @@
           <!-- ANCHOR Publicar -->
           <div>
             <div>
-              <textarea class="form-control mt-3 input-custom" placeholder="Como foi a aula?" id="publicagem" style="resize: none;"></textarea>
+              <textarea class="form-control mt-3 input-custom" placeholder="Como foi a Aula?" id="publicagem" style="resize: none;"></textarea>
             </div>
-            <div class="mt-1 clearfix">
+            <div class="mt-2 clearfix">
                 <span class="icon icon-imagem float-left mt-1 mx-1"></span>
                 <span class="icon icon-arquivo float-left mt-1 mx-1"></span>
                 <span class="icon icon-enquete float-left mt-1 mx-1"></span>
                 <span class="icon icon-calendario float-left mt-1 mx-1"></span>
-                <button type="button" class="btn btn-custom rounded-pill float-right" id="postar">Publicar</button>
+                <button type="button" class="btn btn-custom rounded-pill float-right" id="postar" onclick="publicar()">Publicar</button>
             </div>
           </div>
 
@@ -104,242 +114,11 @@
 
           
           <!-- SECTION Postagens -->
-          <div class="card mt-5">
-            <div class="container">
-              <div class="row card-header bg-white">
-                <div class="col-auto">
-                  <img src="img/perfil.svg" height="40" class="rounded-circle">
-                </div>
-                <div class="col">
-                  <strong>Nome do Usuário</strong>
-                  <span>@usuario</span>
-                  <span class="float-right">00:00</span>
-                </div>
-              </div>
+          <div id="feed">
 
-              <div class="card-body text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam illo laboriosam architecto voluptate, tenetur unde delectus necessitatibus neque beatae, nam dignissimos ea quasi facilis dolorem id fugiat qui quod. Adipisci.
-              </div>
-
-              <div class="row text-center card-footer">
-                <div class="col">
-                  <span class="icon icon-comentar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-curti"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-compartilhar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <div class="card mt-5">
-            <div class="container">
-              <div class="row card-header bg-white">
-                <div class="col-auto">
-                  <img src="img/perfil.svg" height="40" class="rounded-circle">
-                </div>
-                <div class="col">
-                  <strong>Nome do Usuário</strong>
-                  <span>@usuario</span>
-                  <span class="float-right">00:00</span>
-                </div>
-              </div>
-
-              <div class="card-body text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam illo laboriosam architecto voluptate, tenetur unde delectus necessitatibus neque beatae, nam dignissimos ea quasi facilis dolorem id fugiat qui quod. Adipisci.
-              </div>
-
-              <div class="row text-center card-footer">
-                <div class="col">
-                  <span class="icon icon-comentar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-curti"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-compartilhar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mt-5">
-            <div class="container">
-              <div class="row card-header bg-white">
-                <div class="col-auto">
-                  <img src="img/perfil.svg" height="40" class="rounded-circle">
-                </div>
-                <div class="col">
-                  <strong>Nome do Usuário</strong>
-                  <span>@usuario</span>
-                  <span class="float-right">00:00</span>
-                </div>
-              </div>
-
-              <div class="card-body text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam illo laboriosam architecto voluptate, tenetur unde delectus necessitatibus neque beatae, nam dignissimos ea quasi facilis dolorem id fugiat qui quod. Adipisci.
-              </div>
-
-              <div class="row text-center card-footer">
-                <div class="col">
-                  <span class="icon icon-comentar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-curti"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-compartilhar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="card mt-5">
-            <div class="container">
-              <div class="row card-header bg-white">
-                <div class="col-auto">
-                  <img src="img/perfil.svg" height="40" class="rounded-circle">
-                </div>
-                <div class="col">
-                  <strong>Nome do Usuário</strong>
-                  <span>@usuario</span>
-                  <span class="float-right">00:00</span>
-                </div>
-              </div>
-
-              <div class="card-body text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam illo laboriosam architecto voluptate, tenetur unde delectus necessitatibus neque beatae, nam dignissimos ea quasi facilis dolorem id fugiat qui quod. Adipisci.
-              </div>
-
-              <div class="row text-center card-footer">
-                <div class="col">
-                  <span class="icon icon-comentar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-curti"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-compartilhar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mt-5">
-            <div class="container">
-              <div class="row card-header bg-white">
-                <div class="col-auto">
-                  <img src="img/perfil.svg" height="40" class="rounded-circle">
-                </div>
-                <div class="col">
-                  <strong>Nome do Usuário</strong>
-                  <span>@usuario</span>
-                  <span class="float-right">00:00</span>
-                </div>
-              </div>
-
-              <div class="card-body text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam illo laboriosam architecto voluptate, tenetur unde delectus necessitatibus neque beatae, nam dignissimos ea quasi facilis dolorem id fugiat qui quod. Adipisci.
-              </div>
-
-              <div class="row text-center card-footer">
-                <div class="col">
-                  <span class="icon icon-comentar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-curti"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-compartilhar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="card mt-5">
-            <div class="container">
-              <div class="row card-header bg-white">
-                <div class="col-auto">
-                  <img src="img/perfil.svg" height="40" class="rounded-circle">
-                </div>
-                <div class="col">
-                  <strong>Nome do Usuário</strong>
-                  <span>@usuario</span>
-                  <span class="float-right">00:00</span>
-                </div>
-              </div>
-
-              <div class="card-body text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam illo laboriosam architecto voluptate, tenetur unde delectus necessitatibus neque beatae, nam dignissimos ea quasi facilis dolorem id fugiat qui quod. Adipisci.
-              </div>
-
-              <div class="row text-center card-footer">
-                <div class="col">
-                  <span class="icon icon-comentar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-curti"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-compartilhar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="card mt-5">
-            <div class="container">
-              <div class="row card-header bg-white">
-                <div class="col-auto">
-                  <img src="img/perfil.svg" height="40" class="rounded-circle">
-                </div>
-                <div class="col">
-                  <strong>Nome do Usuário</strong>
-                  <span>@usuario</span>
-                  <span class="float-right">00:00</span>
-                </div>
-              </div>
-
-              <div class="card-body text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam illo laboriosam architecto voluptate, tenetur unde delectus necessitatibus neque beatae, nam dignissimos ea quasi facilis dolorem id fugiat qui quod. Adipisci.
-              </div>
-
-              <div class="row text-center card-footer">
-                <div class="col">
-                  <span class="icon icon-comentar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-curti"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-                <div class="col">
-                  <span class="icon icon-compartilhar"></span>
-                  <span class="badge badge-pill badge-primary">0</span>
-                </div>
-              </div>
-            </div>
+          <div class="mt-5 text-center">
+            <button type="button" class="btn btn-custom rounded-pill" id="carregar" onclick="carregarMais()">Mostrar Mais</button>
           </div>
           <!-- !SECTION -->
 
@@ -421,5 +200,121 @@
         <!-- !SECTION -->
     </div>
   </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script> 
+  <script src="js/init.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="js/toast.js"></script>
+
+  <script>
+    
+    var post;
+    var data = new Date().toLocaleDateString();
+    var nome = localStorage.nome;
+    var user = localStorage.user;
+    
+    $('#usernome').text(nome);
+    $('#useruser').text(user);
+
+    window.onunload = () => {
+      if(localStorage.lembrar === 'false'){
+        let user = localStorage.user;
+        localStorage.clear();
+        localStorage.user = user;
+      }
+    }
+
+    var childrenVal=[];
+    var childrenKey=[];
+    var firstKnownKey = "";
+    var oldSize;
+    firebase.database().ref('postagens/').orderByKey().limitToLast(5).on('child_added', function(snap, prevChildKey) {
+        childrenVal.unshift(snap.val());
+        childrenKey.unshift(snap.key);
+        firstKnownKey = childrenKey[childrenKey.length-1];
+        $('#feed').prepend($(gerarPost(snap.val().User,snap.val().Nome,snap.val().Data,snap.val().Texto)).hide().fadeIn(1000));
+        oldSize = childrenVal.length;
+    });
+
+    function exclude(key){
+      return key.substring(0, key.length - 1) + String.fromCharCode(key.charCodeAt(key.length - 1) - 1)
+    }
+    
+    function carregarMais(){
+      firebase.database().ref('postagens/').orderByKey().endAt(exclude(firstKnownKey)).limitToLast(5).once('value').then((snap) => {
+        oldSize = childrenKey.length;
+        snap.forEach(childSnap => {
+          if(childrenKey.indexOf(childSnap.key) === -1){
+            childrenVal.unshift(childSnap.val());
+            childrenKey.unshift(childSnap.key);
+          }
+        });
+        firstKnownKey = childrenKey[4];
+        childrenVal.forEach((postagem, index) => {
+            if(index<childrenKey.length - oldSize)
+              $('#feed').append($(gerarPost(postagem.User, postagem.Nome, postagem.Data, postagem.Texto)).hide().fadeIn(1000));
+        })
+      });
+    }
+
+    function gerarPost(user, nome, data, texto){
+      return `
+      <div class="card mt-5">
+            <div class="container">
+              <div class="row card-header bg-white">
+                <div class="col-auto">
+                  <img src="img/perfil.svg" height="40" class="rounded-circle">
+                </div>
+                <div class="col">
+                  <strong>${nome}</strong>
+                  <span>@${user}</span>
+                  <span class="float-right">${data}</span>
+                </div>
+              </div>
+
+              <div class="card-body text-justify">
+                ${texto}
+              </div>
+
+              <div class="row text-center card-footer">
+                <div class="col">
+                  <span class="icon icon-comentar"></span>
+                  <span class="badge badge-pill badge-primary">0</span>
+                </div>
+                <div class="col">
+                  <span class="icon icon-curti"></span>
+                  <span class="badge badge-pill badge-primary">0</span>
+                </div>
+                <div class="col">
+                  <span class="icon icon-compartilhar"></span>
+                  <span class="badge badge-pill badge-primary">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        `
+    }
+
+    function publicar(){
+        post = $('#publicagem').val();
+
+        if(post !== ''){
+          firebase.database().ref('postagens/').push({
+            User: user,
+            Nome: nome,
+            Texto: post,
+            Data: data
+          });
+          criarToast('Aviso','Postagem Feita!','success');
+          $('#publicagem').val('');
+        };
+      }
+  </script>
+
   </body>
 </html>
