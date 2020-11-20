@@ -46,6 +46,10 @@
     color: #54229d;
 }
 
+.editavel:hover{
+    cursor: pointer;
+}
+
 .border-custom{
     border: solid 1px #54229d;
 }
@@ -172,6 +176,6 @@
     cursor: pointer;
 }
 
-.icon-page{
+.icon-ativo{
     filter: invert(27%) sepia(19%) saturate(6051%) hue-rotate(246deg) brightness(96%) contrast(94%);
 }

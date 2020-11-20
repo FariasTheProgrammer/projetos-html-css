@@ -25,7 +25,7 @@
   <div class="login-container d-flex align-items-center justify-content-center">
     <div class="login-form text-center">
       <img src="img/logo.svg" alt="">
-      <h1 class="mb-5 font-weight-light text-uppercase">Cadastro</h1>
+      <h1 class="mb-5 font-weight-light text-uppercase">Cadastro (Professor)</h1>
 
       <div class="form-group">
         <input type="text" id="cadnome" class="form-control rounded-pill form-control-lg" placeholder="Nome Completo">
@@ -38,6 +38,11 @@
       <div class="form-group">
         <input type="email" id="cademail" class="form-control rounded-pill form-control-lg"
           placeholder="E-mail Institucional">
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="cadescola" class="form-control rounded-pill form-control-lg"
+          placeholder="Instituição de Ensino">
       </div>
 
       <hr>
@@ -86,10 +91,11 @@
       user = $('#caduser').val();
       senha1 = $('#cadsenha1').val();
       senha2 = $('#cadsenha2').val()
+      escola = $('#cadescola').val()
     }
 
     function camposPreenchidos() {
-      if (nome === '' || cpf === '' || email === '' || user === '' || senha1 === '' || senha2 === '') {
+      if (nome === '' || cpf === '' || email === '' || user === '' || senha1 === '' || senha2 === '' || escola === '') {
         if (nome === '') {
           criarToast('Aviso', 'Nome é um Campo Obrigatório!', 'danger')
           $('#cadnome').focus();
@@ -114,6 +120,10 @@
           criarToast('Aviso', 'Confirmar Senha é um Campo Obrigatório!', 'danger')
           $('#cadsenha2').focus();
         }
+        if (escola === '') {
+          criarToast('Aviso', 'Instituição é um Campo Obrigatório!', 'danger')
+          $('#cadescola').focus();
+        }
 
         return false;
       }
@@ -136,14 +146,15 @@
               nome: nome,
               cpf: cpf,
               email: email,
+              bio: 'Edite seu Perfil para Alterar a sua Biografia',
+              perfil: 'img/perfil.svg',
               user: user,
               senha: senha1,
-              perfil: 'img/perfil.svg',
-              bio: 'Edite seu Perfil para Alterar a sua Biografia',
-              cargo: 'Aluno'
+              cargo: 'Professor',
+              escola: escola
             });
             criarToast('Aviso', 'Usuário Cadastrado com Sucesso!', 'success');
-            setInfo(nome, user, 'Edite seu Perfil para Alterar a sua Biografia', 'img/perfil.svg', 'Aluno', false);
+            setInfo(nome, user, 'Edite seu Perfil para Alterar a sua Biografia', 'img/perfil.svg', 'Professor', false);
             window.location.href = 'index.html';
           }
           else {
@@ -153,7 +164,6 @@
       }
       return false;
     }
-
   </script>
 </body>
 
